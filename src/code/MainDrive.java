@@ -37,6 +37,23 @@ public class MainDrive {
 //		...
 //		9 x 9 = 81
 		
+//		반복요소 2개.
+//		1) 각 단의 내용을 출력
+//		2) 단 자체를 출력.
+		
+//		둘 중에 더 바쁜것 : 1)반복 => j
+//		반복을 먼저 작성. : i
+		
+//		단 자체를 담당하는 i
+		for(int i=2;i<=9;i++){
+			
+//			각 단의 내용을 출력하는 j
+			for(int j=0;j<9;j++) {	
+//				String.format + i,j를 이용해 상황에 맞는 문장 출력
+				System.out.println(String.format("%d x %d = %d",i,j+1,i*(j+1)));			
+			}
+		}
+		
 	}
 	
 }
