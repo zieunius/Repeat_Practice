@@ -95,14 +95,49 @@ public class MainDrive {
 //		}
 		
 //		강사님 답
+//		
+//		for(int i=0;i<5;i++) {
+//			for(int j=0; j<i+1;j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
 		
-		for(int i=0;i<5;i++) {
-			for(int j=0; j<i+1;j++) {
+		
+//		3.3) 역방향 별찍기
+//		***** i:0,별:5 :::: 별찍는 갯수 : 5-i개
+//		****  i:1,별:4
+//		***   i:2,별:3
+//		**	   i:3,별:2
+//		*	  i:4,별:1
+//		
+//		for(int i=0;i<5;i++) {
+//			for(int j=5;j>i;j--) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+		
+//		강사님 답
+		
+//		1번째 : i와 j의 연관관계 추출 (*=5-i)
+		
+//		for(int i=0;i<5;i++) {
+//			for(int j=0;j<5-i;j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+		
+//		2번째 : i의 값이 줄어들도록 for문을 감소형으로
+		
+		for(int i=5;i>0;i--) {
+//			j가 도는 횟수를 5,4,3,2,1로 줄도록
+			for(int j=0; j<i;j++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
-		
 		
 	}
 	
