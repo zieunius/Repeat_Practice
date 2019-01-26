@@ -64,17 +64,44 @@ public class MainDrive {
 //		*****
 //		*****
 		
-//		세로 줄바꿈
-		for(int i=0;i<5;i++){
-//			가로 별찍기
-			for(int j=0;j<5;j++) {
+////		세로 줄바꿈
+//		for(int i=0;i<5;i++){
+////			가로 별찍기
+//			for(int j=0;j<5;j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+//		
+		
+//		3.2) 기초 삼각형 별찍기
+//		*   i:0일때 별은 1개
+//		**  i:1일때 별은 2개
+//		*** i:2일때 별은 3개
+//		**** i:3일때 별은 4개
+//		***** i:4일때 별은 5개
+		
+//		가로 출력담당 변수 : j (안쪽 for)
+//		세로 줄바꿈 변수 : i (바깥 for)
+		
+//		반복문의 반복횟수 ? 반복문의 조건식이 담당. =>조건식의 조건을 변수로 활용하자!
+		
+//		for(int i=0;i<5;i++) {
+//		 System.out.print("*");
+//			for(int j=0;j<i;j++) {
+//				System.out.print("*");
+//			}
+//		 System.out.println();
+//		}
+		
+//		강사님 답
+		
+		for(int i=0;i<5;i++) {
+			for(int j=0; j<i+1;j++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
-		
-		
-		
 		
 		
 	}
